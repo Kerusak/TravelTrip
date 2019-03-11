@@ -3,7 +3,7 @@
 if (!isset($_POST['regbtn'])): ?>
     <div class="row">
         <div class="col-md-6 col-md-offset-1">
-            <form action="index.php?page=4" method="post">
+            <form action="index.php?page=3" method="post">
                 <div class="form-group">
                     <label for="login">Login</label>
                     <input type="text" name="login" id="login" class="form-control">
@@ -29,9 +29,6 @@ if (!isset($_POST['regbtn'])): ?>
     <?php
     if (register($_POST['login'], $_POST['password'], $_POST['email'])){
         echo "<h3><span style='color: green;'>New User Added</span></h3>";
-
     }
-
     ?>
-
 <?php endif; ?>
